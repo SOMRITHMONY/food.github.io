@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.section-menu{
+    width: 100%;
+    float: left;
+    padding: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px black;
+    background-color: rgb(251, 230, 234);
+}
+.logo{
+    width: 20%;
+    float: left;
+}
+.logo img{
+    width: 120px;
+    float: right;
+    cursor: pointer;
+}
+.menu{
+    width: 60%;
+    float: left;
+}
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.menu ul li{
+    display: inline-block;
+}
+.menu ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    
+}
+.menu ul li a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background: rgb(246, 61, 92);
+    display: block;
+    transition: 0.2s linear;
+}
+.menu ul li a:hover::after{
+    width: 100%;
+}
+.menu ul li a:hover{
+    color: rgb(246, 61, 92);
+}
+.icon{
+    width: 20%;
+    float: left;
+}
+.icon ul{
+    list-style-type: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.icon ul li{
+    float: left;
+}
+.icon ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+    
+}
+.icon ul li a:hover{
+    color: rgb(232, 64, 92);
+    text-decoration: underline;
+}
+
+
+
+/* section-body */
+
+.section-body{
+    width: 100%;
+    height: 770px;
+    float: left;
+}
+.box{
+    width: 100%;
+    float: left;
+    position: relative;
+}
+.box-txt{
+    position: absolute;
+    width: 45%;
+    height: 400px;
+    float: left;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+.box-img{
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 55%;
+}
+
+
+.box1{
+    width: 100%;
+    float: left;
+    position: relative;
+}
+.box-img1{
+    position: absolute;
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.box-img1 img{
+    width: 90%;
+}
+.box-txt1{
+    position: absolute;
+    width: 45%;
+    float: left;
+    height: 400px;
+    margin-top: 10%;
+    margin-left: 55%;
+}
+
+
+/* order menu */
+.order-menu{
+    width: 100%;
+    float: left;
+    margin-top: 45%;
+}
+.order-menu h1{
+    font-size: 55px;
+    text-align: center;
+    
+}
+.order-menu h1 span{
+    color: rgb(232, 64, 92);
+    margin-left: 15px;
+    font-family: mv boli;
+}
+.order-menu-box{
+    width: 95%;
+    height: 1100px;
+    margin:auto;
+    margin-bottom: 30px;
+}
+.menu_card{
+    width: 360px;
+    height: 500px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.menu_card .menu_image{
+    width: 100%;
+    height: 245px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.menu_card .menu_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+.menu_card .menu_image:hover img{
+    transform: scale(1.1);
+}
+.menu_card .menu_image:hover img{
+    transform: scale(1.1);
+}
+.menu_info h2{
+    width: 60%;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    font-size: 25px;
+    color: rgb(232, 64, 92);
+}
+.menu_info p{
+    text-align: center;
+    margin-top: 8px;
+    line-height: 21px;
+}
+.menu_info h3{
+    text-align: center;
+    margin-top: 10px;
+}
+.menu_info .menu_icon{
+    color: rgb(232, 64, 92);
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+.menu_info .menu_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background: #000;
+    border-radius: 5px;
+    padding: 8px 10px;
+    margin: 0 80px;
+    transition: 0.3s;
+}
+
+/*Gallary*/
+
+.gallary{
+    width: 100%;
+    float: left;
+    margin-top: 10%;
+    margin-bottom: 30px;
+}
+.gallary h1{
+    font-size: 55px;
+    text-align: center;
+}
+.gallary h1 span{
+    margin-left: 15px;
+    color: rgb(232, 64, 92);
+    font-family: mv boli;
+}
+.gallary_image_box{
+    width: 95%;
+    margin: 10px auto;
+    background-color: aqua;
+} 
+.gallary_image_box .gallary-image{
+    width: 31%;
+    float: left;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.gallary_image_box .gallary-image img{
+    width: 100%;
+}
+.gallary_image_box .gallary-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+.gallary_image_box .gallary-image:hover img{
+    transform: scale(1.1);
+}
+.gallary_image_box .gallary-image:hover img{
+    transform: scale(1.1);
+}
+
+/*Order*/
+
+.order{
+    width: 100%;
+    height: 500px;
+    padding: 70px 0;
+}
+.order h1{
+    text-align: center;
+    color: #000;
+    font-size: 55px;
+}
+.order h1 span{
+    color: rgb(232, 64, 92);
+    margin-right: 15px;
+    font-family: mv boli;
+}
+.order_main{
+    width: 95%;
+    margin: auto;
+}
+.order_image{
+    width: 50%;
+    height: 600px;
+    float: left;
+}
+.order_image img{
+    width: 100%;
+    height: 100%;
+}
+
+.order .order_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.order .order_main .order_image img{
+    width: 600px;
+}
+
+.order .order_main form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 10px;
+}
+
+.order .order_main form .input p{
+    line-height: 25px;
+}
+
+.order .order_main form .input{
+    margin: 5px;
+}
+
+.order .order_main form .input input{
+    width: 300px;
+    height: 35px;
+    padding: 0 10px;
+    border: 2px solid #cccccc;
+    background: #eeeeee;
+    outline: none;
+    border-radius: 3px;
+}
+
+.order .order_main form .input input:focus{
+    border: 2px solid rgb(232, 64, 92);
+}
+
+.order .order_main form .order_btn{
+    padding: 10px 0;
+    background: rgb(232, 64, 92);
+    color: white;
+    width: 40%;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+
+
